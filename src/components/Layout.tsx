@@ -9,6 +9,7 @@ import { Avatar, AvatarFallback } from './ui/avatar';
 import { Badge } from './ui/badge';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 import { Button } from './ui/button';
+import { ThemeToggle } from './ThemeToggle';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -71,6 +72,9 @@ const Layout: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-2">
+            {/* Theme Toggle */}
+            <ThemeToggle />
+
             {/* Language Switcher */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
